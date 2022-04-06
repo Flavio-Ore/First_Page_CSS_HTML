@@ -1,0 +1,116 @@
+/*Media Querie*/
+
+
+/* body {
+    min-height: 100vh;
+}
+
+.root {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+} */
+
+label {
+    display: block;
+}
+
+.login {
+    min-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+.login-header h1 {
+    box-shadow: 10px 10px #381c7f, -10px -10px #891919;
+    text-align: center;
+    font-size: 300%;
+    text-shadow: 0px 5px 15px #020202;
+}
+
+.login-form {
+    border: .5px solid #f2f2f2;
+    border-image: linear-gradient(45deg, #381c7f, #891919) 1;
+    background: linear-gradient(145deg, #381c7fc1, #891919c1);
+    box-shadow: 25px 25px 79px #891919, -25px -25px 79px #381c7f;
+}
+
+.login-form {
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 10%;
+    margin: 5% auto;
+    text-align: center;
+}
+
+.login-form label {
+    text-align: left;
+    margin-left: 40px;
+    color: #f2f2f2;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+    max-width: 400px;
+    width: 80%;
+    line-height: 3em;
+    font-family: 'OpenSans', sans-serif;
+    margin: 1em 2em;
+    border-radius: 5px;
+    border: 2px solid #f2f2f2;
+    outline: none;
+    padding-left: 10px;
+}
+
+.login-form input[type="button"] {
+    height: 30px;
+    width: 100px;
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    color: slategrey;
+    text-transform: uppercase;
+    font-family: 'OpenSans', sans-serif;
+    cursor: pointer;
+}
+
+.sign-up {
+    color: #f2f2f2;
+    margin-left: -70%;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.no-access {
+    color: #E86850;
+    margin: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.try-again {
+    color: #f2f2f2;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.login-form h3 {
+    text-align: center;
+    margin: 0;
+}
+
+@media only screen and (min-width: 764px) {
+    .login {
+        max-width: 764px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
+    .login-header {
+        box-shadow: 25px 25px #381c7f, -25px -25px #891919;
+        text-align: center;
+        font-size: 300%;
+    }
+}
