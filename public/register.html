@@ -28,7 +28,7 @@
     <meta name="msapplication-TileImage" content="assets/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/register.css">
     <title>BOOTCAMP</title>
 </head>
 
@@ -46,25 +46,29 @@
                     </i>
         </nav>
     </header>
-    <div class="root">
+    <div class="register">
         <main>
-            <div class="login">
-                <div class="login-header">
-                    <h1>Login</h1>
-                </div>
-                <div class="login-form">
-                    <label for="">Username:</label>
-                    <input type="text" placeholder="Username" name="username" />
-                    <label>Password:</label>
-                    <input type="password" placeholder="Password" />
-                    <input type="button" value="Login" class="login-button" />
-                    <a href="" class="sign-up">Sign Up!</a>
-                    <a href="" class="no-access">Can't access your account?</a>
-                </div>
-
+            <div class="register-header">
+                <h1>Sign Up</h1>
+            </div>
+            <div class="registration">
+                <form class="form">
+                    <label class="form__label">Your email:</label>
+                    <input type="text" class="form__input" placeholder="xxx@xxxxx.com" />
+                    <label class="form__label">Password: </label>
+                    <input type="text" class="form__input" placeholder="Password" />
+                    <label class="form__label">Password: [repeat]</label>
+                    <input type="text" class="form__input" placeholder="repeat password" />
+                    <label class="form__label">Year of Birth: </label>
+                    <input type="text" class="form__input" placeholder="dd/mm/yyyy" />
+                    <div class="register__button">
+                        <input type="button" value="Register" class="form-button" />
+                    </div>
+                </form>
             </div>
         </main>
     </div>
+
 
     <footer>
         <div class="socialmedia">

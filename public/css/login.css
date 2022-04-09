@@ -1,25 +1,25 @@
-/*Media Querie*/
-
-
-/* body {
-    min-height: 100vh;
-}
-
-.root {
+body {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-} */
-
-label {
-    display: block;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh
 }
 
 .login {
-    min-width: 500px;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     margin-left: auto;
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    margin-right: auto;
+    margin-top: 7rem;
+    width: 80%
+}
+
+.login-header {
+    position: relative;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto
 }
 
 .login-header h1 {
@@ -27,90 +27,96 @@ label {
     text-align: center;
     font-size: 300%;
     text-shadow: 0px 5px 15px #020202;
+    min-width: 134px
 }
 
 .login-form {
-    border: .5px solid #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50vh;
+    padding: 2rem;
+    -o-border-image: linear-gradient(45deg, #381c7f, #891919) 1;
     border-image: linear-gradient(45deg, #381c7f, #891919) 1;
     background: linear-gradient(145deg, #381c7fc1, #891919c1);
     box-shadow: 25px 25px 79px #891919, -25px -25px 79px #381c7f;
-}
-
-.login-form {
-    box-sizing: border-box;
-    padding-top: 15px;
-    padding-bottom: 10%;
-    margin: 5% auto;
-    text-align: center;
+    text-align: center
 }
 
 .login-form label {
-    text-align: left;
-    margin-left: 40px;
-    color: #f2f2f2;
+    margin-left: 10%;
+    align-self: start;
+    color: #f2f2f2
 }
 
-.login input[type="text"],
-.login input[type="password"] {
-    max-width: 400px;
-    width: 80%;
-    line-height: 3em;
+.login input[type=button],
+.login input[type=password],
+.login input[type=text] {
     font-family: 'OpenSans', sans-serif;
-    margin: 1em 2em;
-    border-radius: 5px;
-    border: 2px solid #f2f2f2;
-    outline: none;
-    padding-left: 10px;
+    border: 2px solid #f2f2f2
 }
 
-.login-form input[type="button"] {
+.login input[type=password],
+.login input[type=text] {
+    width: 80%;
+    margin-left: 10%;
+    align-self: start;
+    line-height: 2.7rem;
+    border-radius: 5px;
+    outline: none
+}
+
+.login-form input[type=button] {
     height: 30px;
     width: 100px;
-    background: #f2f2f2;
-    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
     border-radius: 20px;
-    color: slategrey;
-    text-transform: uppercase;
-    font-family: 'OpenSans', sans-serif;
-    cursor: pointer;
+    text-transform: uppercase
+}
+
+.login-form a {
+    align-self: start;
+    margin-left: 50px;
+    margin: 0
 }
 
 .sign-up {
-    color: #f2f2f2;
-    margin-left: -70%;
-    cursor: pointer;
-    text-decoration: underline;
+    color: #f2f2f2
 }
 
-.no-access {
-    color: #E86850;
-    margin: 20px;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
+.no-access,
 .try-again {
-    color: #f2f2f2;
-    text-decoration: underline;
-    cursor: pointer;
+    color: #E86850
 }
 
-.login-form h3 {
-    text-align: center;
-    margin: 0;
+.no-access,
+.sign-up,
+.try-again {
+    text-decoration: underline
 }
 
-@media only screen and (min-width: 764px) {
+@media only screen and (min-width:764px) {
+    .login-form input[type=button],
+    .no-access,
+    .sign-up,
+    .try-again {
+        cursor: pointer
+    }
     .login {
-        max-width: 764px;
+        display: block;
+        max-width: 640px;
         margin-right: auto;
         margin-left: auto;
-        margin-top: 8rem;
-        margin-bottom: 8rem;
+        margin-top: 8rem
     }
     .login-header {
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
         box-shadow: 25px 25px #381c7f, -25px -25px #891919;
         text-align: center;
-        font-size: 300%;
+        font-size: 200%
     }
 }
